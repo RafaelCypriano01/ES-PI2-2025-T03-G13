@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <!-- detalhes da página web -->
+  <title>Esqueci Minha senha</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Importação bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="bg-light">
+ <!-- criação do container para facilitar a implementação dos itens na página, cração de margens, outros -->
+  <div class="container py-5">
+    <div class="row justify-content-center align-items-center min-vh-100">
+      <div class="col-lg-8">
+        <div class="row g-0 shadow rounded-4 overflow-hidden">
+          <div class="col-md-5 d-flex flex-column align-items-center justify-content-center bg-primary text-white p-4 p-md-5 text-center">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Logo_PUC-Campinas.svg" alt="Logo PUC-Campinas" class="mb-3" style="height: 60px;">
+            <h2 class="fw-bold mb-3">Sistema Nota Dez</h2>
+            <p class="mb-0 opacity-75">Envio do link para recuperação de senha</p>
+          </div>
+          <div class="col-md-7 bg-white p-4 p-md-5 d-flex flex-column justify-content-center">
+            <h2 class="text-center mb-4">Redefinir Senha</h2>
+            <p class= "text-center mb-4">Informe o e-mail cadastrado para receber o link e redefinir sua senha</p>
+            <form>
+              <div class="mb-3">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu e-mail" required>
+              </div>
+              <!-- botão para envio do link para e-mail do usuário -->
+              <div class="d-grid gap-2 mb-3">
+                <button type="submit" name="botaoRedefSenha" class="btn btn-primary">Enviar</button>
+              </div>
+              <div class="text-center">
+                <!-- hiperlink para reenvio do link no e-mail do usuário -->
+                <span>Não recebeu o e-mail? Para enviar novamente, </span>
+                <a href="cadastro.html" name="hiperEmail" class="link-secondary">Clique Aqui</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
