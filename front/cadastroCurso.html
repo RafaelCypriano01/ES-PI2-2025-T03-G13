@@ -11,10 +11,10 @@
 </head>
 <body class = "bg-light">
     <div class="container py-5">
-        <form>
+        <form id = "formCurso">
           <!-- título página -->
             <h2 class="text-center mb-4">Cadastro dos Cursos</h2>
-            <h5 class="text-center mb-4">Cadastre seus cursos ministrados na instituição: xxxxx </h5>
+            <h5 class="text-center mb-4 text-muted">Cadastre seus cursos ministrados na instituição: <strong>xxxxxx</strong></h5>
             <!-- labels obrigatórios -->
               <div class="mb-3 p-2">
                 <label for="curso1" class="form-label">Curso</label>
@@ -24,12 +24,31 @@
               <div class="mb-2 p-2">
                 <button type="button" name="botaoCurso" class="btn btn-outline-secondary btn-sm">Adicionar Curso +</button>
               </div>
-              <!-- botão para enviar arquivo-->
-              <div class="d-grid gap-2 col-6 mx-auto">
-                <!-- envia arquivo e vai pra página inicial -->
-                <button type="submit" class="btn btn-primary">Página Inicial</button>
-                <!-- envia o arquivo e vai pra página de cadastrar disciplinas -->
-                <button type="submit" class="btn btn-primary">Continuar Cadastro</button>
+                   <!-- Botões de ação -->
+              <div style="display:flex; justify-content:center; gap:1rem; margin-top:2rem;">
+              <!-- Página inicial -->
+                 <button 
+                 type="submit" 
+                 class="btn btn-outline-secondary" name = "botaoPagInicial" id = "botaoPagInicial"
+                 style="display:flex; align-items:center; gap:0.5rem; font-weight:500;">
+              <!-- Ícone de casa -->
+                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+                    <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6.647 6.647A.5.5 0 0 0 1.5 8.5h1v6a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H13a.5.5 0 0 0 .5-.5v-6h1a.5.5 0 0 0 .354-.854L8.354 1.146z"/>
+                 </svg>
+                 Página Inicial
+                 </button>
+              <!-- Continuar cadastro -->
+                 <button 
+                 type="submit" 
+                 class="btn btn-primary" name = "continuarCadastro2" id = "continuarCadastro2"
+                 style="display:flex; align-items:center; gap:0.5rem; font-weight:500;">
+                 Continuar Cadastro
+              <!-- Ícone seta -->
+                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                   <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+                   <path fill-rule="evenodd" d="M8.5 4.5a.5.5 0 0 1 .5.5v2.5H11a.5.5 0 0 1 0 1H9v2.5a.5.5 0 0 1-1 0V8.5H6a.5.5 0 0 1 0-1h2V5a.5.5 0 0 1 .5-.5z"/>
+                 </svg>
+                </button>
               </div>
         </form>
   </div>
