@@ -22,19 +22,23 @@
                 <div class="p-2">
                   <label for="nome" class="form-label">Nome</label>
                   <input type="text" class="form-control" id="nome" name="nome" placeholder="Informe seu nome" required>
+                  <div class="invalid-feedback">Por favor, preencha o nome.</div>
                 </div>
                 <div class="p-2">
                   <label for="sobrenome" class="form-label">Sobrenome</label>
                   <input type="text" class="form-control" id="sobrenome" name="sobrenome" placeholder="Informe seu sobrenome"required>
+                  <div class="invalid-feedback">Por favor, preencha o sobrenome.</div>               
                 </div>
               </div>
               <div class="mb-3 p-2">
                 <label for="email" class="form-label">E-mail</label>
                 <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu e-mail" required>
+                <div class="invalid-feedback">Por favor, preencha o email.</div>
               </div>
               <div class ="mb-3 p-2">
                 <label for="telefone" class="form-label">Telefone</label>
                 <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="Ex:(99) 99999 9999" required>
+                <div class="invalid-feedback">Por favor, preencha o telefone.</div>
               </div>
               <div class="mb-3 p-2">
                 <label for="senha" class="form-label">Senha</label>
@@ -42,10 +46,13 @@
                 <div id="restricaoSenha" class="form-text">
                   Sua senha deve ter de 8 a 20 caracteres, conter letras e números e não deve conter espaços, caracteres especiais ou emojis.
                 </div>
+                <div class="invalid-feedback" id="erroSenhaVazia">Por favor, preencha a senha.</div>
               </div>
               <div class="mb-3 p-2">
                 <label for="confirmSenha" class="form-label">Confirme a Senha</label>
                 <input type="password" class="form-control" id="confirmSenha" name="confirmSenha" placeholder="Confirmar senha" required>
+                <div class="invalid-feedback" id="erroConfirmacao">Por favor, preencha a confirmação da senha.</div>
+                <div class="invalid-feedback d-none" id="erroSenhasDiferentes">As senhas não coincidem.</div>
               </div>
               <!-- botão para enviar arquivo e ir para página de cadastro instituição -->
               <!-- col-6 centraliza na tela (usa metade da largura da tela, divide a tela em 12) junto com mx-auto na horizontal -->

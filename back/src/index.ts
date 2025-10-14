@@ -25,11 +25,16 @@ app.listen(3000, () => {
 
 app.post("/usuarios", (req:Request, res:Response) => {
     let usuario = req.body;
-    usuarios.push(usuario);
-    //inserir no banco de dados
-    res.send({message:"Usuário cadastrado com sucesso!"});
-});
-
+    console.log(usuario)
+    if (usuario["nome"] == "" || usuario["sobrenome"] == "" || usuario["telefone"] == "" || usuario["email"] == "" || usuario["senha"] == ""){
+        res.status(400).send({message:"Campos não preenchidos"})
+    }
+    else {
+        usuarios.push(usuario);  //inserir no banco de dados
+        res.send({message:"Usuário cadastrado com sucesso!"});
+    }
+})
+    
 app.post("/login", (req:Request, res:Response) => {
     let dados = req.body;
     let usuario = usuarios.find(_usuario => _usuario.email === dados["email"] && _usuario.senha === dados["senha"]);
