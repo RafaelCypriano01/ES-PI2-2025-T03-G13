@@ -6,10 +6,9 @@ const tel          = document.getElementById("telefone");
 const senha        = document.getElementById("senha");
 const confSenha    = document.getElementById("confirmSenha");
 const btnCadastro  = document.getElementById("botaoCadastro");
-console.log(btnCadastro);
 
-async function salvarUsuario(){                                                   
-    const url = `http://localhost:3000/usuarios`      
+async function salvarUsuario(){
+    
     const body = {
        nome : nome.value,
        sobrenome : sobrenome.value,
@@ -32,6 +31,7 @@ async function salvarUsuario(){
 })
 .then(data => {
   console.log("Usuário cadastrado:", data);
+  window.location.href = "login.html";
 })    
 }
 
