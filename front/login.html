@@ -29,14 +29,20 @@
           <!-- Formulário Direita, informações de login -->
           <div class="col-md-7 bg-white p-4 p-md-5 d-flex flex-column justify-content-center">
             <h2 class="text-center mb-4">Login</h2>
+            <!-- ALERTA DE LOGIN -->
+            <div id="alertLogin"></div>
             <form id="login" novalidate>
               <div class="mb-3">
                 <label for="email" id="email" class="form-label">E-mail</label>
                 <input type="email" id="emailInput" class="form-control" id="email" name="email" placeholder="Digite seu e-mail" required>
+              <div id="erroEmailVazio" class="invalid-feedback d-none">Preencha o seu e-mail.</div>
+              <div id="erroEmailInvalido" class="invalid-feedback d-none">E-mail inválido.</div>
               </div>
               <div class="mb-3">
                 <label for="senha" id="senha" class="form-label">Senha</label>
                 <input type="password" id= "senhaInput" class="form-control" id="senha" name="senha" placeholder="Digite sua senha" required>
+                <div id="erroSenhaVazia" class="invalid-feedback d-none">Preencha a sua senha.</div>
+                <div id="erroSenhaInvalido" class="invalid-feedback d-none">Senha inválida.</div>
               </div>
               <div class="mb-3">
                 <!-- hiperlink para esqueci minha senha e manda para a página "senha" -->
