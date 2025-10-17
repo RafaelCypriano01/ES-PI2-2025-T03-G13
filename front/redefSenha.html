@@ -33,15 +33,19 @@
                 <div id="restricaoSenha" class="form-text">
                   Sua senha deve ter de 8 a 20 caracteres, conter letras e números e não deve conter espaços, caracteres especiais ou emojis.
                 </div>
+                 <div id="erroSenhaVazia" class="invalid-feedback d-none">Por favor, preencha a senha.</div>
+                 <div id="erroSenhaInvalida" class="invalid-feedback d-none">A senha deve ter 8 a 20 caracteres, com pelo menos 1 letra maiúscula, 1 minúscula e 1 número.</div>
               </div>
               <div class="mb-3">
                 <label for="confSenha" class="form-label">Confirme a Senha</label>
                 <input type="password" class="form-control" id="confSenha" name="confSenha" placeholder="Confirmar nova senha" required>
+                <div id="erroConfirmacao" class="invalid-feedback d-none">Por favor, confirme a senha.</div>
+                <div id="erroSenhasDiferentes" class="invalid-feedback d-none">As senhas não coincidem.</div>
               </div>
               <div class="d-grid gap-2 mb-3">
                 <!-- botão para login que manda para página inicial -->
                 <!-- btn-lg deixa o botão maior (large) -->
-                <button type="submit" name="botaoLogin" class="btn btn-primary btn-lg">Redefinir</button>
+                <button type="button" name="botaoSenha" id="btnSenha" class="btn btn-primary btn-lg">Redefinir</button>
               </div>
             </form>
           </div>
@@ -51,3 +55,5 @@
   </div>
 </body>
 </html>
+
+<script src="redefSenha.js"></script>

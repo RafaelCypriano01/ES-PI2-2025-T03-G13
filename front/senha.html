@@ -27,10 +27,12 @@
               <div class="mb-3">
                 <label for="email" class="form-label">E-mail</label>
                 <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu e-mail" required>
+                <div id="erroEmailVazio" class="invalid-feedback d-none">Preencha seu e-mail.</div>
+                <div id="erroEmailInvalido" class="invalid-feedback d-none">E-mail inválido.</div>
               </div>
               <!-- botão para envio do link para e-mail do usuário -->
               <div class="d-grid gap-2 mb-3">
-                <button type="submit" name="botaoRedefSenha" class="btn btn-primary">Enviar</button>
+                <button type="button" name="botaoRedefSenha" id="btnEmail" class="btn btn-primary">Enviar</button>
               </div>
               <div class="text-center">
                 <!-- hiperlink para reenvio do link no e-mail do usuário -->
@@ -45,3 +47,5 @@
   </div>
 </body>
 </html>
+
+<script src="senha.js"></script>
