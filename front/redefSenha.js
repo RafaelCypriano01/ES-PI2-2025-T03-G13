@@ -1,6 +1,6 @@
 const senha        = document.getElementById("senha");
 const confSenha    = document.getElementById("confSenha");
-const btnSenha = document.getElementById("btnSenha");
+const btnSenha     = document.getElementById("btnSenha");
 
 const senhaRegex   = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,20}$/;
 
