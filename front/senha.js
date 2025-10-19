@@ -1,5 +1,5 @@
 
-const email        = document.getElementById("email");
+const email     = document.getElementById("email");
 const btnEmail  = document.getElementById("btnEmail");
 
 async function linkRecSenha(){                                                       
@@ -51,9 +51,6 @@ function validarCamposBasicos() {
 
 // btnEmail.addEventListener("click", (event) => {
 //   event.preventDefault(); // impede envio automático
-
-//   // valida todos os campos básicos (email, senha)
-//   validarCamposBasicos();
 //   // Se tudo válido, salva o usuário
 //   if (
 //     email.value.trim() !== "" &&
